@@ -19,3 +19,6 @@ yarn.lock
 
 # Golang lockfile
 go.sum
+
+# Compilation outputs.
+build/
