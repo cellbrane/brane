@@ -1,2 +1,5 @@
 # All packages uses TS. JS here are compilation output files.
 packages/**/*.js
+packages/**/*.cjs
+packages/**/*.mjs
+!packages/**/rollup.config.js
