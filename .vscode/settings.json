@@ -1,6 +1,7 @@
 {
-  // Enable VSCode eslint extension supports for flat config.
+  // Eslint options.
   "eslint.experimental.useFlatConfig": true,
+  "eslint.options": {"overrideConfigFile": "eslint.config.dev.js"},
 
   // File nesting.
   "explorer.fileNesting.enabled": true,
@@ -10,7 +11,7 @@
     "*.js": "${capture}.test.js",
     "package.json": "package-lock.json,pnpm-lock.yaml,yarn.lock",
     "pnpm-lock.yaml": "pnpm-workspace.yaml",
-    "eslint.config.js": ".eslintignore",
+    "eslint.config.js": ".eslintignore,eslint.config.*.js",
     "prettier.config.js": ".prettierignore",
     "readme.md": "changelog.md,license.txt,license,code_of_conduct.md"
   },
