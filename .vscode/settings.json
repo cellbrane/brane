@@ -1,0 +1,4 @@
+{
+  // Enable VSCode eslint extension supports for flat config.
+  "eslint.experimental.useFlatConfig": true
+}
