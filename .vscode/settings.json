@@ -13,5 +13,13 @@
     "eslint.config.js": ".eslintignore",
     "prettier.config.js": ".prettierignore",
     "readme.md": "changelog.md,license.txt,license,code_of_conduct.md"
-  }
+  },
+
+  // Code formatters.
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {"source.organizeImports": "always"},
+  "[go]": {"editor.defaultFormatter": "golang.go"},
+  "[go.mod]": {"editor.defaultFormatter": "golang.go"},
+  "[go.work]": {"editor.defaultFormatter": "golang.go"}
 }
