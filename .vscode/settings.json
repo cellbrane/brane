@@ -21,5 +21,14 @@
   "editor.codeActionsOnSave": {"source.organizeImports": "always"},
   "[go]": {"editor.defaultFormatter": "golang.go"},
   "[go.mod]": {"editor.defaultFormatter": "golang.go"},
-  "[go.work]": {"editor.defaultFormatter": "golang.go"}
+  "[go.work]": {"editor.defaultFormatter": "golang.go"},
+
+  // File association.
+  "files.associations": {
+    ".prettierignore": "ignore",
+    ".eslintignore": "ignore",
+    ".cjs": "js",
+    ".mjs": "js",
+    "license": "txt"
+  }
 }
