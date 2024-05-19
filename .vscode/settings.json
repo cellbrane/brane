@@ -10,9 +10,6 @@
     "*.ts": "${capture}.d.ts,${capture}.js,${capture}.*js,${capture}.test.ts",
     "*.js": "${capture}.test.js",
     "package.json": "package-lock.json,pnpm-lock.yaml,yarn.lock",
-    "pnpm-lock.yaml": "pnpm-workspace.yaml",
-    "eslint.config.js": ".eslintignore,eslint.config.*.js",
-    "prettier.config.js": ".prettierignore",
     "readme.md": "changelog.md,license.txt,license,code_of_conduct.md"
   },
 
