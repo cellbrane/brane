@@ -3,7 +3,7 @@ import eslintTS from "typescript-eslint"
 
 // eslint rules: https://eslint.org/docs/latest/rules/
 // typescript eslint rules: https://typescript-eslint.io/rules/
-export default eslintTS.config(
+const configs = eslintTS.config(
   eslintJS.configs.recommended,
   ...eslintTS.configs.recommended,
   ...eslintTS.configs.strict,
@@ -16,3 +16,14 @@ export default eslintTS.config(
     },
   },
 )
+
+// eslint ignores: https://eslint.org/docs/latest/use/configure/ignore
+export default configs.map(function (config) {
+  config.ignores = [
+    "packages/**/*.js",
+    "packages/**/*.cjs",
+    "packages/**/*.mjs",
+    "!packages/**/rollup.config.js",
+  ]
+  return config
+})
