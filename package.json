@@ -6,9 +6,14 @@
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint . --config eslint.config.dev.js",
-    "review": "npm run review:format && npm run review:lint",
-    "review:format": "prettier --check .",
-    "review:lint": "eslint ."
+    "review": "npm run review:node",
+    "review:node": "npm run review:node:format && npm run review:node:lint",
+    "review:node:format": "prettier --check .",
+    "review:node:lint": "eslint .",
+    "build": "npm run build:node",
+    "build:node": "npm run build:node:api && npm run build:node:cli",
+    "build:node:api": "cd packages/api && npm run build && cd ../..",
+    "build:node:cli": "cd packages/cli && npm run build && cd ../.."
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
